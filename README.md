@@ -1,13 +1,13 @@
 # Go Cryptography
 
-[![Go Reference](https://pkg.go.dev/badge/golang.org/x/crypto.svg)](https://pkg.go.dev/golang.org/x/crypto)
+[![Go Reference](https://pkg.go.dev/badge/github.com/utilitywarehouse/energy-crypto.svg)](https://pkg.go.dev/github.com/utilitywarehouse/energy-crypto)
 
 This repository holds supplementary Go cryptography libraries.
 
 ## Download/Install
 
-The easiest way to install is to run `go get -u golang.org/x/crypto/...`. You
-can also manually git clone the repository to `$GOPATH/src/golang.org/x/crypto`.
+The easiest way to install is to run `go get -u github.com/utilitywarehouse/energy-crypto/...`. You
+can also manually git clone the repository to `$GOPATH/src/github.com/utilitywarehouse/energy-crypto`.
 
 ## Report Issues / Send Patches
 

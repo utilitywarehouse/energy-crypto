@@ -22,9 +22,9 @@ import (
 	"testing"
 	"text/template"
 
-	"golang.org/x/crypto/internal/testenv"
-	"golang.org/x/crypto/ssh"
-	"golang.org/x/crypto/ssh/testdata"
+	"github.com/utilitywarehouse/energy-crypto/internal/testenv"
+	"github.com/utilitywarehouse/energy-crypto/ssh"
+	"github.com/utilitywarehouse/energy-crypto/ssh/testdata"
 )
 
 const (

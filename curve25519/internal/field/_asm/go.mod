@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/mmcloughlin/avo v0.5.0
-	golang.org/x/crypto v0.1.0
+	github.com/utilitywarehouse/energy-crypto v0.1.0
 )
 
 require (
@@ -13,4 +13,4 @@ require (
 	golang.org/x/tools v0.6.0 // indirect
 )
 
-replace golang.org/x/crypto v0.1.0 => ../../../..
+replace github.com/utilitywarehouse/energy-crypto v0.1.0 => ../../../..
