@@ -425,7 +425,12 @@ func confirmKeyAck(key PublicKey, algo string, c packetConn) (bool, error) {
 			if err := Unmarshal(packet, &msg); err != nil {
 				return false, err
 			}
-			if msg.Algo != algo || !bytes.Equal(msg.PubKey, pubKey) {
+
+			// (osimon) When trying to compare algorithms for keys created using ssh-rsa
+			// we only check the first returned type rather than the three supported.
+			// Now lets check all of the compatible algorithms.
+			compatibleAlgos := algorithmsForKeyFormat(msg.Algo)
+			if !contains(compatibleAlgos, algo) || !bytes.Equal(msg.PubKey, pubKey) {
 				return false, nil
 			}
 			return true, nil
